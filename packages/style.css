@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    padding-top: 2rem;
+    min-height: 100vh ;
+}
+
+.background {
+    background-image: url('../image/Nayeon2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: -1;
+}
+.main-header {
+    width: 100%;
+    padding: 10px;
+    background-color: cadetblue;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+.main-header__brand {
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    font-size: large;
+}
+
+.main-header__brand img {
+    height: 30px;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 60px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    list-style: none;
+    
+}
+
+.main-nav__items a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.main-nav__item {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.main-nav__item a:hover, .main-nav__item a:active {
+    color: white;
+    border-bottom: 5px white solid;
+}
+
+.section-plan {
+    background-color: aquamarine;
+    width: 80%;
+    padding: 16px 16px;
+    margin: 23px 0;
+    border: 5px black solid;
+    border-left: none;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.section-plan:hover, .section-plan:active {
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    border-color: bisque;
+}
+
+.section-plan__2 {
+    background-color: rgb(146, 150, 154);
+}
+
+.section-plan__3 {
+    background-color: blanchedalmond;
+}
+
+.plan-title {
+    color: black;
+    font-weight: bold;
+}
+
+.package__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: white;
+    background: #ff5454;
+    padding: 8px;
+    transform:  rotateZ(45deg) translateX(3rem) translateY(-2rem) ;
+    transform-origin: center;
+    text-align: center;
+    width: 12rem;
+
+}
+
+.package__badge:hover, .package__badge:active {
+    color: black;
+    background: white;
+    border: #ff5454 solid 3px;
+}
+
+.plan-features {
+    color: rgb(61, 56, 56)
+}
+
+.plan-description {
+    border: 2px black solid;
+    padding: 16px 16px;
+    background: white;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-plan a {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+.main-nav__item--cta a{
+    color: white;
+    background-color: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover, .main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+.main-footer {
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.main-footer__link a{
+    text-decoration: none;
+    font-weight: bold;
+    color:  white;
+}
+
+.main-footer__link:hover, .main-footer__link:active {
+    color: #ccc;
+}
+
+@media(min-width: 40rem) {
+    main {
+        margin: 3rem 0;
+        max-width: 1500px;
+    }
+}
+
